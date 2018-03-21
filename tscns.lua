@@ -1,4 +1,4 @@
--- @name TBD
+-- @name tscns
 	-- @description Outputs the hexadecimal values of the card content
 	-- @targets 0.8
 	-- Version 1.0
@@ -38,4 +38,4 @@
 		sw, resp = card.read_binary('.')
 		nodes.append(DF2, {classname="file",label="EF.Servizi installati",val=tostring(resp)})
 		card.disconnect()
-	end
+end
